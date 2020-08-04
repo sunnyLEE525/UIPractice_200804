@@ -67,6 +67,7 @@
     <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:visibility="visible"
         android:orientation="horizontal">
 
         <RadioButton
@@ -105,10 +106,25 @@
         android:scaleType="fitXY"/>
 <!--        android:scaleType="centerCrop"/>-->  <!--자르는 방법 -->
 
-    <Button
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="회원가입"/>
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="취소"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="회원가입"/>
+<!--        android:layout_weight="1" 비중, 얼마나 줄지? 몇대몇?-->
+
+    </LinearLayout>
 
 
 </LinearLayout>
