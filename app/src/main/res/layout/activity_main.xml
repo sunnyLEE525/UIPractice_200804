@@ -99,12 +99,23 @@
         android:enabled="false"
         android:text="마케팅 활용 동의."/>
 
-    <ImageView
-        android:layout_width="250dp"
-        android:layout_height="120dp"
-        android:src="@drawable/image_sun_test"
-        android:scaleType="fitXY"/>
-<!--        android:scaleType="centerCrop"/>-->  <!--자르는 방법 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/image_sun_test"
+            android:scaleType="centerCrop"/>
+        <!--    android:scaleType="fitXY"-->
+        <!--        android:scaleType="centerCrop"/>-->  <!--자르는 방법 -->
+
+    </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -122,6 +133,7 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="회원가입"/>
+<!--            android:layout_width="0dp" 원하는 방향으로 일단 0dp를 줌.-->
 <!--        android:layout_weight="1" 비중, 얼마나 줄지? 몇대몇?-->
 
     </LinearLayout>
