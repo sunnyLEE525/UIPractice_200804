@@ -99,6 +99,11 @@
         android:enabled="false"
         android:text="마케팅 활용 동의."/>
 
+    <!-- weight를 사용해서 나머지 항목을 아래로 내려 줌-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -115,12 +120,6 @@
         <!--        android:scaleType="centerCrop"/>-->  <!--자르는 방법 -->
 
     </LinearLayout>
-
-    <!-- weight를 사용해서 나머지 항목을 아래로 내려 줌-->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_weight="1"/>
 
     <LinearLayout
         android:layout_width="match_parent"
